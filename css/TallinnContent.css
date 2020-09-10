@@ -1,0 +1,28 @@
+.menuContent{
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  width: 100%;
+  margin-right: 40px;
+}
+
+.text{
+  display: grid;
+  padding-left: 30px;
+}
+
+.tallinnPhotoFlex{
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: center;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.menu{
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}

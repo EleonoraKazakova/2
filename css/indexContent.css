@@ -1,0 +1,24 @@
+.imgsize {
+  width: 100%;
+  max-width: 500px;
+}
+
+.cities{
+  display: flex;
+  flex-flow: column wrap;
+}
+
+.citiesPart{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.title{
+  display: grid;
+  justify-content: center;
+  border-top-style: double;
+  padding-top: 15px;
+}

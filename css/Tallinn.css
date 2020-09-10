@@ -1,229 +1,186 @@
+@import './TallinnBio.css';
+@import './TallinnContent.css';
+
 .menu{
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
 }
 
 body{
-    margin: 0px;
+  margin: 0px;
 }
 
 @media screen and (min-width: 900px){
-    h1{
-        font-size: 60px;
-        line-height: 100px;
-    }
+  h1{
+    font-size: 60px;
+    line-height: 100px;
+  }
 
-    h2{
-        justify-content: center;
-        font-size: 20px;
-    }
-
-    h3{
-        margin-top: 10px;
-        margin-bottom: 1px;
-        font-size: 40px;
-    }
-
-    .bold{
-        font-weight: bold;
-    }
-
-    p{
-        text-align: justify;
-    }
-
-    .textTallinnPhoto{
-        text-align: center;
-        margin-top: 5px;
-        border-bottom: 10px;
-    }
-
-    .tallinTitle{
-        font-size: 50px;
-        line-height: 0px;
-        color: rgb(255, 255, 255);
-        font-display: center;
-        margin: 25px;
-    }
-
-    .textMenu{
-        font-size: 25px;
-        line-height: 20px;
-        width: 100%;
-    }
-
-    .textContent{
-        font-size: 25px;
-    }
-}
-
-.menuContent{
-    display: flex;
-    flex-direction: column;
-    word-wrap: break-word;
-    width: 100%;
-    margin-right: 40px;
-}
-
-.text{
-    display: grid;
-    padding-left: 30px;
-}
-
-.tallinnPhotoFlex{
-    flex-wrap: wrap;
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
+  h2{
     justify-content: center;
-    margin-left: 100px;
-    margin-right: 100px;
-}
+    font-size: 20px;
+  }
 
-.menu{
-    display: flex;
-    flex-direction: column;
-    padding-left: 30px;
+  h3{
+    margin-top: 10px;
+    margin-bottom: 1px;
+    font-size: 40px;
+  }
+
+  .italic{
+    font-style: italic;
+    text-decoration: underline;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  p{
+    text-align: justify;
+  }
+
+  .textTallinnPhoto{
+    text-align: center;
+    margin-top: 5px;
+    border-bottom: 10px;
+  }
+
+  .tallinTitle{
+    font-size: 50px;
+    line-height: 0px;
+    color: rgb(255, 255, 255);
+    font-display: center;
+    margin: 25px;
+  }
+
+  .textMenu{
+    font-size: 25px;
+    line-height: 20px;
+    width: 100%;
+  }
+
+  .textContent{
+    font-size: 25px;
+  }
 }
 
 @media (min-width: 600px) {
-    .TallinnContent{
-        display: grid;
-        grid-template-rows: 200px 50px 100% 50px;
-        grid-template-columns: 20% 65% 15%;
-        grid-template-areas: 
-        'hd hd hd'
-        'tl tl tl'
-        'sd ct ph'
-        'ft ft ft';
-    }
+  .TallinnContent{
+    display: grid;
+    grid-template-rows: 200px 50px 100% 50px;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-areas: 
+    'hd hd hd'
+    'tl tl tl'
+    'sd ct ph'
+    'ft ft ft';
+  }
 }
 
 @media (min-width: 1100px){
-    .TallinnContent{
-        display: grid;
-        grid-template-rows: 200px 50px 100% 50px;
-        grid-template-columns: 20% 65% 15%;
-        grid-template-areas: 
-        'hd hd hd'
-        'tl tl tl'
-        'sd ct ph'
-        'ft ft ft';
-    }
+  .TallinnContent{
+    display: grid;
+    grid-template-rows: 200px 50px 100% 50px;
+    grid-template-columns: 20% 65% 15%;
+    grid-template-areas: 
+    'hd hd hd'
+    'tl tl tl'
+    'sd ct ph'
+    'ft ft ft';
+  }
 }
 
 #header{
-    grid-area: hd;
-    background-color: rgb(253, 224, 187);
+  grid-area: hd;
+  background-color: rgb(253, 224, 187);
 }
 
 #city{
-    grid-area: tl;
-    background-color: rgb(250, 136, 121);
-    align-self: center;
-    height: 50px;
-    justify-content: center;
+  grid-area: tl;
+  background-color: rgb(250, 136, 121);
+  align-self: center;
+  height: 50px;
+  justify-content: center;
 }
 
 #cidebar{
-    grid-area: sd;
-    background-color: rgb(245, 237, 227);
+  grid-area: sd;
+  background-color: rgb(245, 237, 227);
 }
 
 #content{
-    grid-area: ct;
-    background-color: antiquewhite;
+  grid-area: ct;
+  background-color: antiquewhite;
 }
 
 #bio{
-    grid-area: ph;
-    background-color: rgb(196, 184, 167);
+  grid-area: ph;
+  background-color: rgb(196, 184, 167);
 }
 
 #footer{
-    grid-area: ft;
-    background-color: rgb(253, 224, 187);
+  grid-area: ft;
+  background-color: rgb(253, 224, 187);
 }
 
-/* bio */
-.photo{
-    width: 100%;
-    max-width: 150px;
-}
-
-.bioPhoto{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-}
-
-.bioContent{
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.titleBio{
-    justify-content: center;
-    display: grid;
-}
 
 /* content */
 .tallinnPhoto{
-    display: flex;
-    width: 100%;
-    max-width: 600px;
+  display: flex;
+  width: 100%;
+  max-width: 600px;
 }
 
 .tallinnPhotoVer{
-    width: 100%;
-    max-width: 400px;
-    display: flex;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
 }
 
 .tallinnPhotoVer2{
-    margin-top: 56px;
-    width: 100%;
-    max-width: 400px;
-    display: flex;
+  margin-top: 56px;
+  width: 100%;
+  max-width: 400px;
+  display: flex;
 }
 
 /* cideBar */
 .button{
-    background-color: rgb(250, 136, 121);
-    border-radius: 16px;
-    border: none;
-    text-align: center;
-    width: 100px;
-    height: 40px;
-    display: inline-block;
-    line-height: 35px;
-    font-size: 20px;
+  background-color: rgb(250, 136, 121);
+  border-radius: 16px;
+  border: none;
+  text-align: center;
+  width: 100px;
+  height: 40px;
+  display: inline-block;
+  line-height: 35px;
+  font-size: 20px;
 }
 
 .button:hover{
-    background-color: rgb(250, 157, 121);
+  background-color: rgb(250, 157, 121);
 }
 
 .buttonFlex{
-    display: flex;
-    justify-content: flex-start;
-    width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  width: 50%;
 }
 
 a{
-    color: aliceblue; 
-    word-wrap: break-word;
+  color: aliceblue; 
+  word-wrap: break-word;
 }
 
 .cityMenu{
-    display: flex;
-    flex-direction: row;
-    width: 100%;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
 }
 
 .cityMenuB{
-    display: flex;
-    width: 100%;
+  display: flex;
+  width: 100%;
 }

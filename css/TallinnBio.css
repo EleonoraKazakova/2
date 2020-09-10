@@ -1,0 +1,21 @@
+.photo{
+  width: 100%;
+  max-width: 150px;
+}
+
+.bioPhoto{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.bioContent{
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.titleBio{
+  justify-content: center;
+  display: grid;
+}
