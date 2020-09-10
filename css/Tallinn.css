@@ -146,6 +146,7 @@ body{
     background-color: rgb(253, 224, 187);
 }
 
+/* bio */
 .photo{
     width: 100%;
     max-width: 150px;
@@ -168,15 +169,14 @@ body{
     display: grid;
 }
 
+/* content */
 .tallinnPhoto{
     display: flex;
     width: 100%;
     max-width: 600px;
-    margin-top: 0px;
 }
 
 .tallinnPhotoVer{
-    margin-top: 0px;
     width: 100%;
     max-width: 400px;
     display: flex;
@@ -189,6 +189,7 @@ body{
     display: flex;
 }
 
+/* cideBar */
 .button{
     background-color: rgb(250, 136, 121);
     border-radius: 16px;
@@ -226,4 +227,3 @@ a{
     display: flex;
     width: 100%;
 }
-
