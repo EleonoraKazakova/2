@@ -4,7 +4,7 @@ body {
   margin: 0px;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 600px) {
   .italic {
     font-style: italic;
     text-decoration: underline;
@@ -37,6 +37,7 @@ body {
   flex-direction: column;
   padding-left: 30px;
   word-wrap: break-word;
+  flex-wrap: wrap;
 }
 
 .titleMenu {
@@ -48,7 +49,7 @@ body {
   .content {
     display: grid;
     grid-template-rows: 200px 100% 50px;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 25% 75%;
     grid-template-areas:
       "hd hd"
       "cd ct"
@@ -60,7 +61,7 @@ body {
   .content {
     display: grid;
     grid-template-rows: 200px 100% 50px;
-    grid-template-columns: 15% 85%;
+    grid-template-columns: 25% 75%;
     grid-template-areas:
       "hd hd"
       "cd ct"
@@ -73,10 +74,12 @@ body {
   grid-area: hd;
   background-color: rgb(253, 224, 187);
 }
+
 #cidebar {
   grid-area: cd;
   background-color: rgb(245, 237, 227);
 }
+
 #content {
   grid-area: ct;
   background-color: antiquewhite;
